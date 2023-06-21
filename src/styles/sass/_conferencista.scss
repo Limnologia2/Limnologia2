@@ -1,0 +1,28 @@
+.conferencista {
+    padding: .5rem 1rem;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &-image {
+        position: relative;
+        width: 7rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    &-description {
+        text-align: center;
+        max-width: 300px;
+    }
+}

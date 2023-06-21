@@ -1,0 +1,31 @@
+.patrocinador {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem .5rem;
+
+    &-image {
+        width: 100px;
+        aspect-ratio: 1/1;
+    }
+
+    &-name {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        color: white;
+        font-weight: bold;
+    }
+
+    &-link {
+
+        color: white;
+        text-transform: capitalize;
+
+        &:hover {
+            color: #1e037d;
+        }
+
+    }
+}
