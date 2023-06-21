@@ -1,5 +1,5 @@
 import { AiFillTwitterCircle } from 'react-icons/ai';
-import { FaInstagram } from 'react-icons/fa'
+import { AiFillInstagram } from 'react-icons/ai'
 import { RiFacebookCircleFill } from 'react-icons/ri'
 import { BsWhatsapp } from 'react-icons/bs'
 
@@ -12,7 +12,7 @@ export const Footer = () => {
                     <AiFillTwitterCircle />
                 </a>
                 <a target='_blank' rel='noreferrer' href="https://www.instagram.com/limnologiaco2e/">
-                    <FaInstagram />
+                    <AiFillInstagram />
                 </a>
                 <a target='_blank' rel='noreferrer' href="https://www.facebook.com/profile.php?id=100093704325025">
                     <RiFacebookCircleFill />

@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1900 & mostrar=intercambiar");
+
 .hero {
   position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 56px);
 }
+
 .hero-background {
   position: relative;
   top: 0;
@@ -13,6 +15,7 @@
   height: auto;
   overflow: hidden;
 }
+
 .hero-background-img {
   position: relative;
   top: -10rem;
@@ -20,6 +23,7 @@
   height: auto;
   object-fit: cover;
 }
+
 .hero-buttons {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,7 @@
   left: 50%;
   translate: -50% -50%;
 }
+
 .hero-button {
   text-decoration: none;
   padding: 0.5rem 2rem;
@@ -43,6 +48,7 @@
   transition: 0.3s ease all;
   cursor: pointer;
 }
+
 .hero-button:hover {
   background: #241b52;
   box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3333333333);
@@ -77,6 +83,7 @@ body {
   width: 100vw;
   color: #fff;
 }
+
 .navbar-list {
   padding: 1rem 0;
   display: flex;
@@ -84,6 +91,7 @@ body {
   list-style: none;
   gap: 2rem;
 }
+
 .navbar-item-link {
   padding: 0.5rem 1rem;
   background: transparent;
@@ -94,6 +102,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .navbar-item-link:hover {
   color: #E3B332;
 }
@@ -103,6 +112,7 @@ body {
   padding: 3rem 0;
   color: #fff;
 }
+
 .conferencistas-list {
   margin-top: 3rem;
   display: flex;
@@ -110,6 +120,7 @@ body {
   gap: 2rem 3rem;
   justify-content: center;
 }
+
 .conferencistas-title {
   font-size: 3rem;
   font-weight: bold;
@@ -125,6 +136,7 @@ body {
   align-items: center;
   gap: 2rem;
 }
+
 .conferencista-image {
   position: relative;
   width: 7rem;
@@ -132,12 +144,14 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
 .conferencista-name {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   max-width: 300px;
 }
+
 .conferencista-description {
   text-align: center;
   max-width: 300px;
@@ -153,22 +167,27 @@ body {
   background: linear-gradient(0deg, rgb(23, 15, 52) 0%, rgba(10, 8, 16, 0.605) 50%, rgb(23, 15, 52) 100%);
   color: #fff;
 }
+
 .contacto-title {
   font-size: 2rem;
 }
+
 .contacto-media {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
-.contacto-media > a {
+
+.contacto-media>a {
   text-decoration: none;
   color: #fff;
 }
+
 .contacto-media svg {
   font-size: 2rem;
   cursor: pointer;
 }
+
 .contacto-media svg:hover {
   scale: 1.1;
 }
@@ -177,11 +196,13 @@ body {
   padding: 1rem 0;
   color: white;
 }
+
 .cronograma-list {
   display: flex;
   justify-content: center;
   gap: 7rem;
 }
+
 .cronograma-title {
   padding: 1rem 0;
   font-size: 3rem;
@@ -189,6 +210,7 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid rgba(23, 15, 52, 0.5254901961);
 }
+
 .cronograma-img {
   max-width: 300px;
 }
@@ -197,6 +219,7 @@ body {
   min-height: 100vh;
   padding: 1rem 0;
 }
+
 .patrocinadores-title {
   text-align: center;
   color: white;
@@ -204,6 +227,7 @@ body {
   font-size: 700;
   text-transform: uppercase;
 }
+
 .patrocinadores-list {
   display: flex;
   flex-wrap: wrap;
@@ -221,20 +245,24 @@ body {
   align-items: center;
   padding: 2rem 0.5rem;
 }
+
 .patrocinador-image {
   width: 100px;
   aspect-ratio: 1/1;
 }
+
 .patrocinador-name {
   font-size: 1.2rem;
   text-transform: capitalize;
   color: white;
   font-weight: bold;
 }
+
 .patrocinador-link {
   color: white;
   text-transform: capitalize;
 }
+
 .patrocinador-link:hover {
   color: #1e037d;
 }
