@@ -1,4 +1,4 @@
-import backgroundHeroImage from '../assets/val.png'
+import backgroundHeroImage from '../assets/val.svg'
 
 export const Hero = () => {
     return (<section className="hero" id='hero'>
