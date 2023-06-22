@@ -1,11 +1,11 @@
 .contacto {
     text-align: center;
-    color: #170f34;
+    color: $azul_oscuro;
     display: flex;
     flex-direction: column;
     gap: .5rem;
     padding: 2rem 0 3rem;
-    background: linear-gradient(0deg, rgba(23, 15, 52, 1) 0%, rgba(10, 8, 16, 0.605) 50%, rgba(23, 15, 52, 1) 100%);
+    background: linear-gradient(0deg, $azul_oscuro 0%, #0a08109a 50%, $azul_oscuro 100%);
     color: #fff;
 
     &-title {
@@ -19,7 +19,7 @@
 
         &>a {
             text-decoration: none;
-            color: #fff;
+            color: $blanco;
         }
 
         & svg {

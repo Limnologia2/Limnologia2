@@ -1,7 +1,7 @@
 .cronograma {
     padding: 1rem 0;
 
-    color: white;
+    color: $blanco;
 
     &-list {
         // background-color: white;
@@ -21,6 +21,6 @@
     }
 
     &-img {
-        max-width: 300px;
+        max-height: 500px;
     }
 }

@@ -18,6 +18,7 @@ export const Navbar = () => {
                     <li className="navbar-item">
                         <button
                             className="navbar-item-link"
+                            id="link-hero"
                             onClick={() => scrollToElement('hero')}
                         >
                             Inicio
@@ -39,6 +40,15 @@ export const Navbar = () => {
                             onClick={() => scrollToElement('cronograma')}
                         >
                             Cronograma
+                        </button>
+                    </li>
+                    <li className="navbar-item">
+                        <button
+                            className="navbar-item-link"
+                            id="link-hoteles"
+                            onClick={() => scrollToElement('hoteles')}
+                        >
+                            Hoteles
                         </button>
                     </li>
                     <li className="navbar-item">

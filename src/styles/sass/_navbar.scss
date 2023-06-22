@@ -1,14 +1,16 @@
+@import 'variables.scss';
+
 .navbar {
-    background: transparent;
-    position: relative;
+    background: #1460927e;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100vw;
-    color: #fff;
+
 
     &-list {
-        padding: 1rem 0;
+        padding: .5rem 0;
         display: flex;
         justify-content: center;
         list-style: none;
@@ -22,13 +24,13 @@
             background: transparent;
             border: none;
             text-decoration: none;
-            color: #9d9d9d;
+            color: $blanco;
             cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
 
             &:hover {
-                color: #E3B332;
+                color: $amarillo;
             }
         }
     }

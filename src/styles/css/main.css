@@ -1,29 +1,24 @@
 @import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1900 & mostrar=intercambiar");
-
 .hero {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 56px);
+  height: 100vh;
 }
-
 .hero-background {
   position: relative;
   top: 0;
   left: 0;
   min-width: 100vw;
   height: auto;
-  overflow: hidden;
 }
-
 .hero-background-img {
   position: relative;
-  top: -10rem;
+  top: -6rem;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
 .hero-buttons {
   display: flex;
   flex-direction: column;
@@ -35,22 +30,21 @@
   left: 50%;
   translate: -50% -50%;
 }
-
 .hero-button {
   text-decoration: none;
   padding: 0.5rem 2rem;
   background: #fff;
-  border: 2px solid white;
+  border: 2px solid #fff;
   text-transform: uppercase;
   color: #241b52;
   font-size: 1.2rem;
   font-weight: bold;
   transition: 0.3s ease all;
+  border-radius: 5px;
   cursor: pointer;
 }
-
 .hero-button:hover {
-  background: #241b52;
+  background: #170F34;
   box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3333333333);
   color: #fff;
 }
@@ -62,7 +56,7 @@
 }
 
 body {
-  background: #170f34;
+  background: #170F34;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -75,34 +69,30 @@ body {
 }
 
 .navbar {
-  background: transparent;
-  position: relative;
+  background: rgba(20, 96, 146, 0.4941176471);
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100vw;
-  color: #fff;
 }
-
 .navbar-list {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 2rem;
 }
-
 .navbar-item-link {
   padding: 0.5rem 1rem;
   background: transparent;
   border: none;
   text-decoration: none;
-  color: #9d9d9d;
+  color: #fff;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .navbar-item-link:hover {
   color: #E3B332;
 }
@@ -112,7 +102,6 @@ body {
   padding: 3rem 0;
   color: #fff;
 }
-
 .conferencistas-list {
   margin-top: 3rem;
   display: flex;
@@ -120,7 +109,6 @@ body {
   gap: 2rem 3rem;
   justify-content: center;
 }
-
 .conferencistas-title {
   font-size: 3rem;
   font-weight: bold;
@@ -136,7 +124,6 @@ body {
   align-items: center;
   gap: 2rem;
 }
-
 .conferencista-image {
   position: relative;
   width: 7rem;
@@ -144,14 +131,12 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-
 .conferencista-name {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   max-width: 300px;
 }
-
 .conferencista-description {
   text-align: center;
   max-width: 300px;
@@ -159,50 +144,43 @@ body {
 
 .contacto {
   text-align: center;
-  color: #170f34;
+  color: #170F34;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem 0 3rem;
-  background: linear-gradient(0deg, rgb(23, 15, 52) 0%, rgba(10, 8, 16, 0.605) 50%, rgb(23, 15, 52) 100%);
+  background: linear-gradient(0deg, #170F34 0%, rgba(10, 8, 16, 0.6039215686) 50%, #170F34 100%);
   color: #fff;
 }
-
 .contacto-title {
   font-size: 2rem;
 }
-
 .contacto-media {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
-
-.contacto-media>a {
+.contacto-media > a {
   text-decoration: none;
   color: #fff;
 }
-
 .contacto-media svg {
   font-size: 2rem;
   cursor: pointer;
 }
-
 .contacto-media svg:hover {
   scale: 1.1;
 }
 
 .cronograma {
   padding: 1rem 0;
-  color: white;
+  color: #fff;
 }
-
 .cronograma-list {
   display: flex;
   justify-content: center;
   gap: 7rem;
 }
-
 .cronograma-title {
   padding: 1rem 0;
   font-size: 3rem;
@@ -210,24 +188,21 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid rgba(23, 15, 52, 0.5254901961);
 }
-
 .cronograma-img {
-  max-width: 300px;
+  max-height: 500px;
 }
 
 .patrocinadores {
   min-height: 100vh;
   padding: 1rem 0;
 }
-
 .patrocinadores-title {
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 3rem;
   font-size: 700;
   text-transform: uppercase;
 }
-
 .patrocinadores-list {
   display: flex;
   flex-wrap: wrap;
@@ -245,26 +220,80 @@ body {
   align-items: center;
   padding: 2rem 0.5rem;
 }
-
 .patrocinador-image {
   width: 100px;
   aspect-ratio: 1/1;
 }
-
 .patrocinador-name {
   font-size: 1.2rem;
   text-transform: capitalize;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
-
 .patrocinador-link {
-  color: white;
+  color: #fff;
   text-transform: capitalize;
 }
-
 .patrocinador-link:hover {
-  color: #1e037d;
+  color: #E3B332;
+}
+
+.hotel {
+  display: flex;
+  justify-content: center;
+}
+.hotel-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+
+#hoteles {
+  padding: 1rem 0;
+  min-height: 100vh;
+}
+#hoteles .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotel-table {
+  display: flex;
+  gap: 1.5rem;
+  font-family: "arial";
+}
+.hotel-table-column {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.hotel-table-column-header {
+  background: #CAE2EC;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  outline: 2px solid #000;
+}
+.hotel-table-column-main {
+  background: #fff;
+}
+.hotel-table-column-main-item {
+  padding: 0.35rem 0.75rem;
+  outline: 1px solid #000;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  height: 32px;
+  text-align: center;
+}
+.hotel-table-column-main-item svg {
+  color: #170F34;
 }
 
 /*# sourceMappingURL=main.css.map */

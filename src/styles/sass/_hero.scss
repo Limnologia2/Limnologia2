@@ -1,8 +1,10 @@
+@import '_variables.scss';
+
 .hero {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 56px);
+    height: 100vh;
 
     &-background {
         position: relative;
@@ -10,11 +12,11 @@
         left: 0;
         min-width: 100vw;
         height: auto;
-        overflow: hidden;
+        // overflow: hidden;
 
         &-img {
             position: relative;
-            top: -10rem;
+            top: -6rem;
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -36,17 +38,19 @@
     &-button {
         text-decoration: none;
         padding: .5rem 2rem;
-        background: #fff;
-        border: 2px solid white;
+        background: $blanco;
+        border: 2px solid $blanco;
         text-transform: uppercase;
         color: #241b52;
         font-size: 1.2rem;
         font-weight: bold;
         transition: .3s ease all;
+
+        border-radius: 5px;
         cursor: pointer;
 
         &:hover {
-            background: #241b52;
+            background: $azul_oscuro;
             box-shadow: 0 0 1rem #ffffff55;
             color: #fff;
         }

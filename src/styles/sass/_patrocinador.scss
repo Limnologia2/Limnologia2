@@ -14,17 +14,17 @@
     &-name {
         font-size: 1.2rem;
         text-transform: capitalize;
-        color: white;
+        color: $blanco;
         font-weight: bold;
     }
 
     &-link {
 
-        color: white;
+        color: $blanco;
         text-transform: capitalize;
 
         &:hover {
-            color: #1e037d;
+            color: $amarillo;
         }
 
     }
