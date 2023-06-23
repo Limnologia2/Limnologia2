@@ -16,7 +16,6 @@ function App() {
       <Cronograma />
       <Hoteles />
       <Patrocinadores />
-
       <Footer />
     </>
   )
