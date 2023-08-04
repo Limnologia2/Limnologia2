@@ -7,7 +7,7 @@ export const hoteles = [
     },
     {
         tipo: "Cabaña ",
-        nombre: "TuCabaña",
+        nombre: "Tu Cabaña",
         direccion: "Calle 135 Calle 135 carrera 9D manzana J casa 35, 470006",
         link: "https://www.booking.com/hotel/co/tucabana.es.html?aid=306396&label=santa-marta-D_VDZAcgpWoz4gknZEkqeAS239954962277%3Apl%3Ata%3Ap1380%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2939148751%3Alp1003661%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YdnZzv7u3SiOco5fpqS0M1M&sid=79ec560390a6f5cf09d1bcd9c4add87a&dest_id=-598739;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1686930740;srpvid=273d6f99af8202cd;type=total;ucfs=1&#hotelTmpl"
     },

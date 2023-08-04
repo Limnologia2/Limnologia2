@@ -2,13 +2,14 @@
 
 .hotel-table {
     display: flex;
-    gap: 1.5rem;
+    // gap: rem;
     font-family: 'arial';
 
     &-column {
         // padding: 0 1rem;
-        border-radius: 5px;
+        // border-radius: 5px;
         overflow: hidden;
+        outline: 2px solid $azul_oscuro;
 
         &-header {
             background: $azul_cielo;

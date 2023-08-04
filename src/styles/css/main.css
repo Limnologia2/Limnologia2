@@ -48,6 +48,13 @@
   box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3333333333);
   color: #fff;
 }
+.hero-button-pay {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+}
 
 * {
   padding: 0;
@@ -83,6 +90,9 @@ body {
   list-style: none;
   gap: 2rem;
 }
+.navbar-item {
+  position: relative;
+}
 .navbar-item-link {
   padding: 0.5rem 1rem;
   background: transparent;
@@ -94,6 +104,28 @@ body {
   font-weight: bold;
 }
 .navbar-item-link:hover {
+  color: #E3B332;
+}
+.navbar-dropdown {
+  position: absolute;
+  background: rgba(20, 96, 146, 0.4941176471);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  min-width: 15rem;
+  padding: 0.75rem 1rem;
+  gap: 0.5rem;
+  box-shadow: 0 0 5px 2px rgba(23, 15, 52, 0.4941176471);
+}
+.navbar-dropdown-item-link {
+  text-decoration: none;
+  color: white;
+}
+.navbar-dropdown-item-link:hover {
   color: #E3B332;
 }
 
@@ -193,7 +225,7 @@ body {
 }
 
 .patrocinadores {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 1rem 0;
 }
 .patrocinadores-title {
@@ -211,6 +243,16 @@ body {
   max-width: 70%;
   margin: 0 auto;
 }
+.patrocinadores-image {
+  height: 4rem;
+  width: auto;
+}
+.patrocinadores-image-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 .patrocinador {
   max-width: 300px;
@@ -219,6 +261,10 @@ body {
   gap: 1rem;
   align-items: center;
   padding: 2rem 0.5rem;
+  text-decoration: none;
+}
+.patrocinador:hover .patrocinador-name {
+  color: #E3B332;
 }
 .patrocinador-image {
   width: 100px;
@@ -229,6 +275,7 @@ body {
   text-transform: capitalize;
   color: #fff;
   font-weight: bold;
+  transition: 0.2s ease color;
 }
 .patrocinador-link {
   color: #fff;
@@ -264,12 +311,11 @@ body {
 
 .hotel-table {
   display: flex;
-  gap: 1.5rem;
   font-family: "arial";
 }
 .hotel-table-column {
-  border-radius: 5px;
   overflow: hidden;
+  outline: 2px solid #170F34;
 }
 .hotel-table-column-header {
   background: #CAE2EC;
@@ -294,6 +340,64 @@ body {
 }
 .hotel-table-column-main-item svg {
   color: #170F34;
+}
+
+.pagos {
+  padding: 3rem 0;
+  color: #fff;
+}
+.pagos-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pagos-list {
+  display: flex;
+  list-style: none;
+  padding: 4rem 0;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pagos-item-title {
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  max-width: 300px;
+  text-align: center;
+  transition: 0.2s ease color;
+}
+.pagos-item-image {
+  width: 200px;
+  height: auto;
+}
+.pagos-item-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.pagos-item-link:hover .pagos-item-title {
+  color: #E3B332;
+}
+
+.onconstruction {
+  padding: 0 0 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.onconstruction-image {
+  width: 400px;
+  height: auto;
+}
+.onconstruction-title {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

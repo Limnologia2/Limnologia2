@@ -1,12 +1,20 @@
+/* eslint-disable react/prop-types */
+import { useState } from "react"
+import { Payments } from "../helpers/pagos"
 export const Navbar = () => {
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const scrollToElement = (id) => {
         const destino = document.querySelector(`#${id}`)
         destino.scrollIntoView({ behavior: 'smooth' })
     }
 
-
-
+    window.addEventListener("scroll", () => {
+        setIsDropdownOpen(false)
+    })
+    const toggleDropdown = () => {
+        setIsDropdownOpen(prevState => !prevState)
+    }
     return (
         <nav className="navbar">
             <div className="container">
@@ -65,8 +73,29 @@ export const Navbar = () => {
                             Contactanos
                         </button>
                     </li>
+                    <div className="navbar-item" onClick={toggleDropdown}>
+                        <button className="navbar-item-link">
+                            Pagos
+                        </button>
+                        {
+                            isDropdownOpen && (
+                                <ul className="navbar-dropdown" >
+                                    {Payments && Payments.map((item, index) =>
+                                        <li className="navbar-dropdown-item" key={index}>
+                                            <a href={item.link} target="_blank" className="navbar-dropdown-item-link" rel="noreferrer">
+                                                {item.name}
+                                            </a>
+                                        </li>
+                                    )}
+                                </ul>
+                            )
+                        }
+                    </div>
+
                 </ul>
             </div>
         </nav>
     )
 }
+
+

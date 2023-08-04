@@ -1,30 +1,17 @@
-import Umagdalena from "../assets/patrocinadores/u-magdalena.png"
+// import Umagdalena from "../assets/patrocinadores/u-magdalena.png"
+import Biologika from "../assets/patrocinadores/biologica-logo.webp"
+import Casa_blanca from "../assets/patrocinadores/casablanca-logo.png"
 
 
 export const patrocinadores = [
     {
-        name: "Universidad del Magdalena",
-        link: "https://www.unimagdalena.edu.co/",
-        image: Umagdalena
+        name: "Biologika",
+        link: "http://www.biologika.co",
+        image: Biologika
     },
     {
-        name: "Universidad del Magdalena",
-        link: "https://",
-        image: Umagdalena
-    },
-    {
-        name: "Universidad del Magdalena",
-        link: "https://",
-        image: Umagdalena
-    },
-    {
-        name: "Universidad del Magdalena",
-        link: "https://",
-        image: Umagdalena
-    },
-    {
-        name: "Universidad del Magdalena",
-        link: "https://",
-        image: Umagdalena
-    },
+        name: "Casa Blanca Tayrona",
+        link: "https://linktr.ee/lacasablancasm",
+        image: Casa_blanca
+    }
 ]
