@@ -5,12 +5,8 @@ export const Navbar = () => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const scrollToElement = (id) => {
-        const link = document.getElementById(`link-${id}`)
-        link.addEventListener('click', (event) => {
-            event.preventDefault()
-            const destino = document.querySelector(`#${id}`)
-            destino.scrollIntoView({ behavior: 'smooth' })
-        })
+        const destino = document.querySelector(`#${id}`)
+        destino.scrollIntoView({ behavior: 'smooth' })
     }
 
     window.addEventListener("scroll", () => {
