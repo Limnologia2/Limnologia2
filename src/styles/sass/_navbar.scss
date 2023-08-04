@@ -19,6 +19,8 @@
     }
 
     &-item {
+        position: relative;
+
         &-link {
             padding: .5rem 1rem;
             background: transparent;
@@ -31,6 +33,37 @@
 
             &:hover {
                 color: $amarillo;
+            }
+        }
+    }
+
+    &-dropdown {
+        position: absolute;
+        background: #1460927e;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .9rem;
+        margin-top: 10px;
+        min-width: 15rem;
+        padding: .75rem 1rem;
+        gap: .5rem;
+        box-shadow: 0 0 5px 2px #170F347e;
+        // border: 2px solid #170F347e;
+        // border-top: transparent;
+
+        &-item {
+
+            &-link {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: $amarillo;
+                }
+
             }
         }
     }

@@ -5,6 +5,13 @@
     gap: 1rem;
     align-items: center;
     padding: 2rem .5rem;
+    text-decoration: none;
+
+    &:hover {
+        .patrocinador-name {
+            color: $amarillo;
+        }
+    }
 
     &-image {
         width: 100px;
@@ -16,6 +23,7 @@
         text-transform: capitalize;
         color: $blanco;
         font-weight: bold;
+        transition: .2s ease color;
     }
 
     &-link {

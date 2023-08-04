@@ -11,9 +11,10 @@ export const Hero = () => {
             <a className="hero-button hero-button-register" href='https://docs.google.com/forms/d/e/1FAIpQLSczW5VbGaNR0wtQJKv4pz0CZ4uXvPummIdZ8QD2pIaBOgCTsg/viewform' target='_blank' rel='noreferrer'>
                 Registrarse
             </a>
-            <a className="hero-button hero-button-resumenes" href='#' target='_blank' rel='noreferrer'>
+            <a className="hero-button hero-button-resumenes" href='https://docs.google.com/forms/d/e/1FAIpQLSedzCPnyzfBEKGaAE-yXlgyy7pcqpww7A2czxZBg_1IkJZxdQ/viewform' target='_blank' rel='noreferrer'>
                 Resumenes
             </a>
         </section>
+
     </section>)
 }

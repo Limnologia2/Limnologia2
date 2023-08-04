@@ -6,16 +6,15 @@ export const Patrocinadores = () => {
             <article className="patrocinadores-list">
                 {patrocinadores && patrocinadores.map((patrocinador, index) => {
                     return (
-                        <div className="patrocinador" key={index}>
+                        <a href={patrocinador.link} className="patrocinador" key={index} target="_blank" rel="noreferrer" >
                             <img src={patrocinador.image} alt={patrocinador.name} className="patrocinador-image" />
                             <h4 className="patrocinador-name">{patrocinador.name}</h4>
-                            <a href={patrocinador.link} target="_blank" rel="noopener noreferrer" className="patrocinador-link">
-                                Visitar
-                            </a>
-                        </div>
+
+                        </a>
                     )
                 })}
             </article>
+
         </section>
     )
 }
