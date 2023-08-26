@@ -6,5 +6,9 @@ export const Payments = [
     {
         name: "Estudiante Posgrado o Profesional",
         link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/994"
+    },
+    {
+        name: "Cursos Precongreso",
+        link: "#"
     }
 ]

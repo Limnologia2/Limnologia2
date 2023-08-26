@@ -2,6 +2,8 @@ import maria from "../assets/conferencistas/maria-zuniga.png"
 import jhonatan from "../assets/conferencistas/jhonatan-shurin.png"
 import luciana from "../assets/conferencistas/luciana-gomez.png"
 import manuel from "../assets/conferencistas/manuel-gutierrez.png"
+import juand from "../assets/conferencistas/juan-gonzales.jpg"
+
 
 export const listaConferencistas = [
     {
@@ -27,6 +29,12 @@ export const listaConferencistas = [
         titulo: "Dr.",
         name: "Jonathan B. Shurin",
         descripcion: "Profesor del Departamento de Ecología, Comportamiento y Ecología de la Universidad de California – SanDiego , USA."
+    },
+    {
+        image: juand,
+        titulo: "Dr.",
+        name: "Juan David Gonzales Trujillo",
+        descripcion: "Investigador postdoctoral en la Universidade de Évora Investiga los procesos que regulan la distribución de la biodiversidad en el tiempo y el espacio con el objetivo de cuantificar su vulnerabilidad ante el inminente cambio global."
     },
 
 ]

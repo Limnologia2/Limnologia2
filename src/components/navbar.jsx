@@ -56,6 +56,14 @@ export const Navbar = () => {
                         </button>
                     </li>
                     <li className="navbar-item">
+                        <a href="src/assets/Circulares/Tercera circular.pdf" target="_blank" rel="noreferrer"
+                            className="navbar-item-link"
+                            id="link-contacto"
+                        >
+                            Circular
+                        </a>
+                    </li>
+                    <li className="navbar-item">
                         <button
                             className="navbar-item-link"
                             id="link-patrocinadores"
@@ -64,15 +72,7 @@ export const Navbar = () => {
                             Patrocinadores
                         </button>
                     </li>
-                    <li className="navbar-item">
-                        <button
-                            className="navbar-item-link"
-                            id="link-contacto"
-                            onClick={() => scrollToElement('contacto')}
-                        >
-                            Contactanos
-                        </button>
-                    </li>
+
                     <div className="navbar-item" onClick={toggleDropdown}>
                         <button className="navbar-item-link">
                             Pagos
@@ -91,6 +91,15 @@ export const Navbar = () => {
                             )
                         }
                     </div>
+                    <li className="navbar-item">
+                        <button
+                            className="navbar-item-link"
+                            id="link-contacto"
+                            onClick={() => scrollToElement('contacto')}
+                        >
+                            Contactanos
+                        </button>
+                    </li>
 
                 </ul>
             </div>
