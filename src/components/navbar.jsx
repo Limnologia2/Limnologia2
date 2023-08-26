@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react"
 import { Payments } from "../helpers/pagos"
+import pdfCircular from "../assets/Circulares/actualCircular.pdf"
 export const Navbar = () => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -56,7 +57,7 @@ export const Navbar = () => {
                         </button>
                     </li>
                     <li className="navbar-item">
-                        <a href="src/assets/Circulares/Tercera circular.pdf" target="_blank" rel="noreferrer"
+                        <a href={pdfCircular} target="_blank" rel="noreferrer"
                             className="navbar-item-link"
                             id="link-contacto"
                         >
