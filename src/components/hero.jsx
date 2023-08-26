@@ -1,5 +1,6 @@
 // import backgroundHeroImage from '../assets/val.svg'
 import backgroundHeroImage from '../assets/background.svg'
+import { GrMapLocation } from "react-icons/gr"
 
 export const Hero = () => {
     return (<section className="hero" id='hero'>
@@ -15,6 +16,10 @@ export const Hero = () => {
                 Resumenes
             </a>
         </section>
+        <a href="https://goo.gl/maps/tgFFUcCpKMAb7fTB9" target='_blank' rel="noreferrer" className="hero-location">
+            <GrMapLocation />
+            Universidad del Magdalena
+        </a>
 
     </section>)
 }
