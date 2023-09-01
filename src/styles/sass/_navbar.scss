@@ -55,10 +55,12 @@
         // border-top: transparent;
 
         &-item {
+            padding: 0;
 
             &-link {
                 text-decoration: none;
                 color: white;
+                padding: 0;
 
                 &:hover {
                     color: $amarillo;
