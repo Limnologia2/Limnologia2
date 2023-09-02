@@ -8,7 +8,15 @@ export const Payments = [
         link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/994"
     },
     {
-        name: "Cursos Precongreso",
-        link: "#"
+        name: "Taxonomía y sistemática de peces dulceacuícolas neotropicales (Curso precongreso)",
+        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/1015"
+    },
+    {
+        name: "Introducción a la ecología y taxonomía de diatomeas (Curso precongreso)",
+        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/1016"
+    },
+    {
+        name: "Biomonitoreo acuático participativo (Curso precongreso)",
+        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/1017"
     }
 ]
