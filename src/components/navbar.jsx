@@ -83,9 +83,19 @@ export const Navbar = () => {
                                 <ul className="navbar-dropdown" >
                                     {Payments && Payments.map((item, index) =>
                                         <li className="navbar-dropdown-item" key={index}>
-                                            <a href={item.link} target="_blank" className="navbar-dropdown-item-link" rel="noreferrer">
-                                                {item.name}
-                                            </a>
+                                            {
+                                                !item.subItems.length && (
+                                                    <a href={item.link} target="_blank" className="navbar-dropdown-item-link" rel="noreferrer">
+                                                        {item.name}
+                                                    </a>)
+                                            }
+                                            {
+                                                !!item.subItems.length && (
+                                                    <button className="navbar-item-link subitems">{item.name}</button>
+
+                                                )
+                                            }
+
                                         </li>
                                     )}
                                 </ul>
