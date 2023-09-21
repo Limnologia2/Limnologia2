@@ -1,4 +1,4 @@
-import { AiFillTwitterCircle } from 'react-icons/ai';
+import { FaXTwitter } from 'react-icons/fa6';
 import { AiFillInstagram } from 'react-icons/ai'
 import { RiFacebookCircleFill } from 'react-icons/ri'
 import { BsWhatsapp } from 'react-icons/bs'
@@ -9,7 +9,7 @@ export const Footer = () => {
             <h3 className="contacto-title">Información de contacto</h3>
             <div className="contacto-media">
                 <a target='_blank' rel='noreferrer' href="https://twitter.com/Limnologiaco2E">
-                    <AiFillTwitterCircle />
+                    <FaXTwitter />
                 </a>
                 <a target='_blank' rel='noreferrer' href="https://www.instagram.com/limnologiaco2e/">
                     <AiFillInstagram />
