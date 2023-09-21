@@ -2,9 +2,15 @@
 import Biologika from "../assets/patrocinadores/biologica-logo.webp"
 import Casa_blanca from "../assets/patrocinadores/casablanca-logo.png"
 import Laheral from "../assets/patrocinadores/laheral-logo.png"
-
+import U_magdalena from "../assets/patrocinadores/u-magdalena.png"
+import Semblis from "../assets/patrocinadores/semblis.png"
 
 export const patrocinadores = [
+    {
+        name: "Universidad del Magdalena",
+        link: "https://unimagdalena.edu.co/",
+        image: U_magdalena
+    },
     {
         name: "Biologika",
         link: "http://www.biologika.co",
@@ -19,5 +25,10 @@ export const patrocinadores = [
         name: "Laheral",
         link: "https://laheral.com/",
         image: Laheral
+    },
+    {
+        name: "Semblis Fundation",
+        link: "#",
+        image: Semblis
     },
 ]

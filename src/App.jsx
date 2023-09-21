@@ -8,6 +8,7 @@ import { Patrocinadores } from './components/patrocinadores'
 import { Hoteles } from './components/hoteles'
 import { Pagos } from "./components/Pagos"
 import { OnConstruction } from './components/onConstruction'
+import { PagosPrecongreso } from './components/pagosPrecongreso'
 // import { Circular } from "./components/circular"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <Conferencistas />
+      <PagosPrecongreso />
       <Cronograma />
       <Hoteles />
       {/* <Circular /> */}
