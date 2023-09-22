@@ -1,5 +1,5 @@
 import { Payments } from "../helpers/pagos"
-import paymentImage from "../assets/paymentDraw.svg"
+import paymentImage from "../assets/Pagos/paymentDraw.svg"
 export const Pagos = () => {
     return (
         <section className="pagos" id="pagos">

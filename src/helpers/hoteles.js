@@ -1,5 +1,11 @@
 export const hoteles = [
     {
+        tipo: "Hotel",
+        nombre: "La Casablanca Tayrona",
+        direccion: "Calabazo Km 19,8 vía Santa Marta - Riohacha",
+        link: "https://www.booking.com/hotel/co/la-casablanca.es.html?aid=357028&label=bin859jc-1DCAsoMkINbGEtY2FzYWJsYW5jYUgzWANoMogBAZgBCrgBF8gBDNgBA-gBAYgCAagCA7gC1f6zqAbAAgHSAiQyOTY5NWU0ZC02ZWI4LTQ2YTktYTRjNi1hZmIwOGM2YTI0YTjYAgTgAgE&sid=16e83041bc659ebbd23767eb81741748&dist=0&keep_landing=1&sb_price_type=total&type=total&"
+    },
+    {
         tipo: "Apartamento",
         nombre: "Apartamento El trebol I",
         direccion: "Calle 29 L 1 #21 A2-05 Trebol IV, villa rosalía apartamento 01",
