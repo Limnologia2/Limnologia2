@@ -1,5 +1,4 @@
 import { Payments } from "../helpers/pagos"
-import paymentImage from "../assets/paymentDraw.svg"
 export const PagosPrecongreso = () => {
     const paymentsRender = Payments.filter((payment) =>{
         return payment.tipo === "preencuentro"
@@ -13,7 +12,7 @@ export const PagosPrecongreso = () => {
                         return (
                             <li key={index} className="pagos-item">
                                 <a href={payment.link} className="pagos-item-link" target="_blank" rel="noreferrer">
-                                    <img src={paymentImage} alt="pagos" className="pagos-item-image" />
+                                    <img src={payment.image} alt="pagos" className="pagos-item-image" />
                                     <h3 className="pagos-item-title">
                                         {payment.name}
                                     </h3>
