@@ -388,6 +388,16 @@ a.navbar-item-link {
   padding: 3rem 0;
   color: #fff;
 }
+.pagos-fecha {
+  position: relative;
+  margin: 0 auto;
+  width: 60vw;
+}
+.pagos p {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 1rem;
+}
 .pagos-title {
   font-size: 3rem;
   font-weight: bold;
@@ -397,7 +407,7 @@ a.navbar-item-link {
 .pagos-list {
   display: flex;
   list-style: none;
-  padding: 4rem 0;
+  padding: 1rem 0;
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
@@ -413,6 +423,9 @@ a.navbar-item-link {
 .pagos-item-image {
   width: 200px;
   height: auto;
+}
+.pagos-item-image.preencuentro {
+  width: 350px;
 }
 .pagos-item-link {
   display: flex;

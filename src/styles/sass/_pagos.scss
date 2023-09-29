@@ -2,7 +2,16 @@
     // min-height: 100vh;
     padding: 3rem 0;
     color: $blanco;
-
+    &-fecha{
+        position: relative;
+        margin: 0 auto;
+        width: 60vw;
+    }
+    & p {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0 1rem;
+    }
     &-title {
         font-size: 3rem;
         font-weight: bold;
@@ -13,7 +22,7 @@
     &-list {
         display: flex;
         list-style: none;
-        padding: 4rem 0;
+        padding: 1rem 0;
         gap: 3rem;
         justify-content: center;
         flex-wrap: wrap;
@@ -32,6 +41,9 @@
         &-image {
             width: 200px;
             height: auto;
+            &.preencuentro{
+                width: 350px;
+            }
         }
 
         &-link {
