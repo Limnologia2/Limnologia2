@@ -7,13 +7,13 @@ import PaymentDraw from "../assets/Pagos/paymentDraw.svg"
 export const Payments = [
     {
         name: "Estudiante Pregrado",
-        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/995",
+        link: "https://pse.unimagdalena.edu.co/Volante/GenerarPago/1039",
         tipo: "normal",
         image: PaymentDraw
     },
     {
         name: "Estudiante Posgrado o Profesional",
-        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/994",
+        link: "https://pse.unimagdalena.edu.co/Volante/GenerarPago/1040",
         tipo: "normal",
         image: PaymentDraw
     },
