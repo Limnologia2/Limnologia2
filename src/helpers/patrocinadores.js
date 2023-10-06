@@ -4,6 +4,7 @@ import Casa_blanca from "../assets/patrocinadores/casablanca-logo.png"
 import Laheral from "../assets/patrocinadores/laheral-logo.png"
 import U_magdalena from "../assets/patrocinadores/u-magdalena.png"
 import Semblis from "../assets/patrocinadores/semblis.png"
+import Quimifex from "../assets/patrocinadores/quimifex.png"
 
 export const patrocinadores = [
     {
@@ -30,5 +31,10 @@ export const patrocinadores = [
         name: "Semblis Fundation",
         link: "#",
         image: Semblis
+    },
+    {
+        name: "Quimifex",
+        link: "#",
+        image: Quimifex
     },
 ]
