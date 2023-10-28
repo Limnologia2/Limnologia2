@@ -9,7 +9,7 @@ export const hoteles = [
         tipo: "Hotel",
         nombre: "Camali Hotel",
         direccion: "Calle 15 # 14A - 25 Parque El Cundí . Santa Marta , Magdalena",
-        link: "https://https://www.booking.com/hotel/co/camali.es.html"
+        link: "https://www.booking.com/hotel/co/camali.es.html"
     },
     {
         tipo: "Apartamento",
