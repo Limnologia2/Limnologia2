@@ -19,19 +19,16 @@ export const Payments = [
     },
     {
         name: "Taxonomía y sistemática de peces dulceacuícolas neotropicales",
-        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/1015",
         tipo: "preencuentro",
         image: PECES
     },
     {
         name: "Introducción a la ecología y taxonomía de diatomeas",
-        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/1016",
         tipo: "preencuentro",
         image: ECOLOGIA
     },
     {
         name: "Biomonitoreo acuático participativo",
-        link: "https://pagos.unimagdalena.edu.co/Volante/GenerarPago/1017",
         tipo: "preencuentro",
         image: BIOMONITOREO
     }

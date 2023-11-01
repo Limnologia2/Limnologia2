@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Payments } from "../helpers/pagos";
 import pdfCircular from "../assets/Circulares/actualCircular.pdf";
+import pdfComoPagar from "../assets/Circulares/comoPagar.pdf";
 export const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const scrollToElement = (id) => {
@@ -81,18 +82,32 @@ export const Navbar = () => {
             {isDropdownOpen && (
               <ul className="navbar-dropdown">
                 {Payments &&
-                  Payments.map((item, index) => (
-                    <li className="navbar-dropdown-item" key={index}>
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        className="navbar-dropdown-item-link"
-                        rel="noreferrer"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
+                  Payments.map((item, index) => {
+                    if (item.tipo !== "preencuentro")
+                      return (
+                        <li className="navbar-dropdown-item" key={index}>
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            className="navbar-dropdown-item-link"
+                            rel="noreferrer"
+                          >
+                            {item.name}
+                          </a>
+                        </li>
+                      )
+                  })}
+                <li className="navbar-dropdown-item">
+                  <a
+                    href={pdfComoPagar}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="navbar-dropdown-item-link"
+                    id="link-contacto"
+                  >
+                    ¿Como pagar?
+                  </a>
+                </li>
               </ul>
             )}
           </div>
