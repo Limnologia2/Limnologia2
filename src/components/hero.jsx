@@ -1,8 +1,25 @@
 // import backgroundHeroImage from '../assets/val.svg'
+import { useEffect } from 'react'
 import backgroundHeroImage from '../assets/background.svg'
 import { GrMapLocation } from "react-icons/gr"
 
 export const Hero = () => {
+    const fechaDestino = new Date("2023-11-29");
+    useEffect(() => {
+        const ahora = new Date();
+        const diferencia = fechaDestino - ahora;
+
+        if (diferencia <= 0) {
+            document.getElementById('timer').innerHTML = '¡La espera acabó!';
+        } else {
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            document.getElementById('timer').innerHTML = `${dias} `;
+        }
+    }, [])
+
+
+
+
     return (<section className="hero" id='hero'>
         <div className="hero-background">
             <img src={backgroundHeroImage} alt="Segundo encuentro Colombiano de limnologia" className="hero-background-img" />
@@ -20,6 +37,12 @@ export const Hero = () => {
             <GrMapLocation />
             Universidad del Magdalena
         </a>
+        <div className="hero-countdown">
+            <h1 className="hero-countdown-title">FALTAN</h1>
+            <p className='hero-countdown-timer' id="timer"></p>
+            <h1 className="hero-countdown-title">DIAS</h1>
+            
+        </div>
 
     </section>)
 }

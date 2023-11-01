@@ -101,4 +101,39 @@
         }
 
     }
+
+    &-countdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        z-index: 100;
+        background-color: #ffffff1a;
+        backdrop-filter: blur(1px);
+        // border: 2px solid #ffffff74;
+
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        bottom: 3rem;
+        right: 4rem;
+        align-items: center;
+
+        &-title {
+            font-size: 24px;
+            text-align: center;
+            display: inline-flex;
+            color: $blanco;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 800;
+        }
+
+        &-timer {
+            font-size: 48px;
+            font-weight: bold;
+            color: $amarillo;
+            text-align: center;
+            display: inline-flex;
+        }
+    }
 }
