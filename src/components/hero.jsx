@@ -4,13 +4,13 @@ import backgroundHeroImage from '../assets/background.svg'
 import { GrMapLocation } from "react-icons/gr"
 
 export const Hero = () => {
-    const fechaDestino = new Date("2023-11-29");
+    const fechaDestino = new Date("2023-11-30");
     useEffect(() => {
         const ahora = new Date();
         const diferencia = fechaDestino - ahora;
 
         if (diferencia <= 0) {
-            document.getElementById('timer').innerHTML = '¡La espera acabó!';
+            document.getElementById('timer').innerHTML = '0';
         } else {
             const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
             document.getElementById('timer').innerHTML = `${dias} `;
