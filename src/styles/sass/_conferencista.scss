@@ -26,3 +26,18 @@
         max-width: 300px;
     }
 }
+
+@media screen and (max-width: 992px){
+    .conferencista{
+        &-name{
+            font-size: 1rem;
+            max-width: 200px;
+        }
+        &-image {
+            width: 5rem;
+        }
+        &-description{
+            max-width: unset;
+        }
+    }
+}

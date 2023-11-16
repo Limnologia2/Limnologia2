@@ -1,6 +1,7 @@
 // import backgroundHeroImage from '../assets/val.svg'
-import { useEffect } from 'react'
-import backgroundHeroImage from '../assets/background.svg'
+import { useEffect, useState } from 'react'
+import backgroundHeroImageLarge from '../assets/backgroundLarge.svg'
+import backgroundHeroImageSmall from '../assets/backgroundSmall.png'
 import { GrMapLocation } from "react-icons/gr"
 
 export const Hero = () => {
@@ -16,6 +17,21 @@ export const Hero = () => {
             document.getElementById('timer').innerHTML = `${dias} `;
         }
     }, [])
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleWindowSizeChange = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        };
+    }, []); 
+    const backgroundHeroImage = windowWidth >= 992 ? backgroundHeroImageLarge : backgroundHeroImageSmall;
+
 
 
 
@@ -41,7 +57,7 @@ export const Hero = () => {
             <h1 className="hero-countdown-title">FALTAN</h1>
             <p className='hero-countdown-timer' id="timer"></p>
             <h1 className="hero-countdown-title">DIAS</h1>
-            
+
         </div>
 
     </section>)

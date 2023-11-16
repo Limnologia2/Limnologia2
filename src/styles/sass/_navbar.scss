@@ -8,6 +8,26 @@
     z-index: 100;
     width: 100vw;
 
+    &-button {
+        display: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: .5rem;
+
+        &:hover {
+            background-color: #fff2;
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+    }
 
     &-list {
         padding: .5rem 0;
@@ -51,8 +71,7 @@
         padding: .75rem 1rem;
         gap: .5rem;
         box-shadow: 0 0 5px 2px #170F347e;
-        // border: 2px solid #170F347e;
-        // border-top: transparent;
+        top: 100%;
 
         &-item {
             padding: 0;
@@ -75,4 +94,71 @@ a.navbar-item-link {
     font-size: .8rem;
     position: relative;
     top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        position: fixed;
+
+        &-button {
+            display: inline-block;
+        }
+
+        &-item-link {
+            position: relative;
+            color: $azul;
+            padding: .5rem 4rem .5rem 1rem;
+        }
+
+        &-dropdown {
+            position: relative;
+            background: rgba(20, 96, 146, 0);
+            box-shadow: unset;
+            margin: 0;
+
+            &-item {
+                padding: 0 0 0 1rem;
+                max-width: 200px;
+
+                &-link {
+                    color: $azul;
+                }
+
+                &-link:hover {
+                    color: $amarillo;
+                }
+            }
+        }
+
+        &-list {
+            position: relative;
+            display: none;
+            background-color: #ffffffd5;
+            filter: drop-shadow(1);
+
+            &.open {
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        &-list {
+            gap: 0;
+
+            &-item-link {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    a.navbar-item-link {
+        padding-top: .7rem;
+        height: 100%;
+    }
 }

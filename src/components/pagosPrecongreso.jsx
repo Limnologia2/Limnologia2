@@ -9,7 +9,6 @@ export const PagosPrecongreso = () => {
             <h2 className="pagos-title">Cursos pre-encuentro</h2>
             <div className="container">
                 <p>
-
                     <img src={FechaHora} alt="Fecha y hora del encuentro" className="pagos-fecha" />
                 </p>
                 <ul className="pagos-list">

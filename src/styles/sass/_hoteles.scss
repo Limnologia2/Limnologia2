@@ -24,3 +24,10 @@
         justify-content: center;
     }
 }
+@media screen and (max-width: 992px){
+    .hotel {
+        &-title {
+            font-size: 1.5rem;
+        }
+    }
+}

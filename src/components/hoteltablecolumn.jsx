@@ -3,7 +3,7 @@ import { BsFillArrowRightSquareFill } from "react-icons/bs"
 
 export const HotelTableColumn = ({ label, data }) => {
     return (
-        <div className="hotel-table-column">
+        <div className={`hotel-table-column ${label}`}>
             <header className="hotel-table-column-header">
                 {label}
             </header>

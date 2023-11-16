@@ -23,7 +23,7 @@ function App() {
       {/* <Circular /> */}
       <Pagos />
       <Patrocinadores />
-      <OnConstruction />
+      {/* <OnConstruction /> */}
       <Footer />
     </>
   )
