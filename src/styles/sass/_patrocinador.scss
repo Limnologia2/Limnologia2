@@ -20,7 +20,6 @@
 
     &-name {
         font-size: 1.2rem;
-        text-transform: capitalize;
         color: $blanco;
         font-weight: bold;
         transition: .2s ease color;
@@ -35,5 +34,18 @@
             color: $amarillo;
         }
 
+    }
+}
+@media screen and (max-width: 992px) {
+    .patrocinador{
+        max-width: 200px;
+        flex: 1;
+        &-image{
+            width: 75px;
+        }
+        &-name {
+            font-size: 1rem;
+            text-align: center;
+        }
     }
 }

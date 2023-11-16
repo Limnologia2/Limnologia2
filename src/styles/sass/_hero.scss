@@ -1,5 +1,4 @@
 @import '_variables.scss';
-
 .hero {
     position: relative;
     display: flex;
@@ -10,8 +9,8 @@
         position: relative;
         top: 0;
         left: 0;
-        min-width: 100vw;
-        height: auto;
+        // width: auto;
+        min-height: 100vh;
         pointer-events: none;
         // overflow: hidden;
 
@@ -134,6 +133,30 @@
             color: $amarillo;
             text-align: center;
             display: inline-flex;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .hero {
+        &-countdown {
+            bottom: unset;
+            top: 10%;
+            right: 1rem;
+            padding: 10px 15px;
+            &-title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &-timer {
+                font-size: 24px;
+            }
+        }
+        &-location {
+            font-size: 1.1rem;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }

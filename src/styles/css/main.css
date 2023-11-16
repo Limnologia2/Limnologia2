@@ -9,8 +9,7 @@
   position: relative;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  height: auto;
+  min-height: 100vh;
   pointer-events: none;
 }
 .hero-background-img {
@@ -118,6 +117,27 @@
   display: inline-flex;
 }
 
+@media screen and (max-width: 992px) {
+  .hero-countdown {
+    bottom: unset;
+    top: 10%;
+    right: 1rem;
+    padding: 10px 15px;
+  }
+  .hero-countdown-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .hero-countdown-timer {
+    font-size: 24px;
+  }
+  .hero-location {
+    font-size: 1.1rem;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -145,6 +165,24 @@ body {
   z-index: 100;
   width: 100vw;
 }
+.navbar-button {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.navbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.1333333333);
+}
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
 .navbar-list {
   padding: 0.5rem 0;
   display: flex;
@@ -170,7 +208,7 @@ body {
 }
 .navbar-dropdown {
   position: absolute;
-  background: rgba(20, 96, 146, 0.4941176471);
+  background: rgba(20, 96, 146, 0.494);
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -182,6 +220,7 @@ body {
   padding: 0.75rem 1rem;
   gap: 0.5rem;
   box-shadow: 0 0 5px 2px rgba(23, 15, 52, 0.4941176471);
+  top: 100%;
 }
 .navbar-dropdown-item {
   padding: 0;
@@ -201,6 +240,60 @@ a.navbar-item-link {
   top: 5px;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar {
+    position: fixed;
+  }
+  .navbar-button {
+    display: inline-block;
+  }
+  .navbar-item-link {
+    position: relative;
+    color: #145F92;
+    padding: 0.5rem 4rem 0.5rem 1rem;
+  }
+  .navbar-dropdown {
+    position: relative;
+    background: rgba(20, 96, 146, 0);
+    box-shadow: unset;
+    margin: 0;
+  }
+  .navbar-dropdown-item {
+    padding: 0 0 0 1rem;
+    max-width: 200px;
+  }
+  .navbar-dropdown-item-link {
+    color: #145F92;
+  }
+  .navbar-dropdown-item-link:hover {
+    color: #E3B332;
+  }
+  .navbar-list {
+    position: relative;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8352941176);
+    filter: drop-shadow(1);
+  }
+  .navbar-list.open {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar-list {
+    gap: 0;
+  }
+  .navbar-list-item-link {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  a.navbar-item-link {
+    padding-top: 0.7rem;
+    height: 100%;
+  }
+}
 .conferencistas {
   min-height: 100vh;
   padding: 3rem 0;
@@ -220,6 +313,14 @@ a.navbar-item-link {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 992px) {
+  .conferencistas-list {
+    gap: 1rem 2rem;
+  }
+  .conferencistas-title {
+    font-size: 1.5rem;
+  }
+}
 .conferencista {
   padding: 0.5rem 1rem;
   max-width: 600px;
@@ -246,6 +347,18 @@ a.navbar-item-link {
   max-width: 300px;
 }
 
+@media screen and (max-width: 992px) {
+  .conferencista-name {
+    font-size: 1rem;
+    max-width: 200px;
+  }
+  .conferencista-image {
+    width: 5rem;
+  }
+  .conferencista-description {
+    max-width: unset;
+  }
+}
 .contacto {
   text-align: center;
   color: #170F34;
@@ -258,6 +371,7 @@ a.navbar-item-link {
 }
 .contacto-title {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 .contacto-media {
   display: flex;
@@ -296,6 +410,15 @@ a.navbar-item-link {
   max-height: 500px;
 }
 
+@media screen and (max-width: 992px) {
+  .cronograma-title {
+    font-size: 1.5rem;
+  }
+  .cronograma-img {
+    max-width: 100vw;
+    max-height: unset;
+  }
+}
 .patrocinadores {
   min-height: 50vh;
   padding: 1rem 0;
@@ -311,7 +434,7 @@ a.navbar-item-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 0 3rem;
   max-width: 70%;
   margin: 0 auto;
 }
@@ -326,6 +449,11 @@ a.navbar-item-link {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  .patrocinadores-title {
+    font-size: 1.5rem;
+  }
+}
 .patrocinador {
   max-width: 300px;
   display: flex;
@@ -344,7 +472,6 @@ a.navbar-item-link {
 }
 .patrocinador-name {
   font-size: 1.2rem;
-  text-transform: capitalize;
   color: #fff;
   font-weight: bold;
   transition: 0.2s ease color;
@@ -357,6 +484,19 @@ a.navbar-item-link {
   color: #E3B332;
 }
 
+@media screen and (max-width: 992px) {
+  .patrocinador {
+    max-width: 200px;
+    flex: 1;
+  }
+  .patrocinador-image {
+    width: 75px;
+  }
+  .patrocinador-name {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .hotel {
   display: flex;
   justify-content: center;
@@ -381,6 +521,11 @@ a.navbar-item-link {
   justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+  .hotel-title {
+    font-size: 1.5rem;
+  }
+}
 .hotel-table {
   display: flex;
   font-family: "arial";
@@ -414,6 +559,17 @@ a.navbar-item-link {
   color: #170F34;
 }
 
+@media screen and (max-width: 992px) {
+  .hotel-table-column-main-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+  .hotel-table-column.direccion {
+    display: none;
+  }
+}
 .pagos {
   padding: 3rem 0;
   color: #fff;
@@ -469,6 +625,20 @@ a.navbar-item-link {
   color: #E3B332;
 }
 
+@media screen and (max-width: 992px) {
+  .pagos-title {
+    font-size: 1.5rem;
+  }
+  .pagos-fecha {
+    width: 100%;
+  }
+  .pagos-item-title {
+    font-size: 0.9rem;
+  }
+  .pagos-item-image.preencuentro {
+    width: 250px;
+  }
+}
 .onconstruction {
   padding: 0 0 2rem;
   display: flex;

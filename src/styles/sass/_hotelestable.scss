@@ -42,3 +42,14 @@
         }
     }
 }
+@media screen and (max-width: 992px) {
+    .hotel-table-column-main-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+    }
+    .hotel-table-column.direccion{
+        display: none;
+    }
+}

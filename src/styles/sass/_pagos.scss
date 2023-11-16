@@ -64,3 +64,23 @@
 
 
 }
+@media screen and (max-width: 992px){
+    .pagos{
+        &-title {
+            font-size: 1.5rem;
+        }
+        &-fecha {
+            width: 100%;
+        }
+        &-item {
+            &-title {
+                font-size: 0.9rem;
+            }
+            &-image{
+                &.preencuentro {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

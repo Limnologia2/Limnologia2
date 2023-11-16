@@ -3,8 +3,10 @@ import { useState } from "react";
 import { Payments } from "../helpers/pagos";
 import pdfCircular from "../assets/Circulares/actualCircular.pdf";
 import pdfComoPagar from "../assets/Circulares/comoPagar.pdf";
+import { RxHamburgerMenu } from "react-icons/rx";
 export const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const scrollToElement = (id) => {
     const destino = document.querySelector(`#${id}`);
     destino.scrollIntoView({ behavior: "smooth" });
@@ -12,14 +14,21 @@ export const Navbar = () => {
 
   window.addEventListener("scroll", () => {
     setIsDropdownOpen(false);
+    setIsMenuOpen(false)
   });
   const toggleDropdown = () => {
     setIsDropdownOpen((prevState) => !prevState);
   };
+  const toggleMenu = () => {
+    setIsMenuOpen(prevState => !prevState)
+  }
   return (
     <nav className="navbar">
       <div className="container">
-        <ul className="navbar-list">
+        <button className="navbar-button" onClick={toggleMenu}>
+          <RxHamburgerMenu />
+        </button>
+        <ul className={`navbar-list ${isMenuOpen ? 'open' : ''}`}>
           <li className="navbar-item">
             <button
               className="navbar-item-link"
@@ -119,6 +128,17 @@ export const Navbar = () => {
             >
               Contactanos
             </button>
+          </li>
+          <li className="navbar-item">
+            <a
+              href='https://docs.google.com/presentation/d/1ytuqMtbqtyxKiw_L7_CJTqQ7Avgdi5CP/edit?usp=drive_link&ouid=104229673733624171940&rtpof=true&sd=true'
+              target="_blank"
+              rel="noreferrer"
+              className="navbar-item-link"
+              id="link-contacto"
+            >
+              Plantilla del evento
+            </a>
           </li>
         </ul>
       </div>
