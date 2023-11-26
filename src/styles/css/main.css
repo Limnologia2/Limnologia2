@@ -16,7 +16,7 @@
   position: relative;
   top: -6rem;
   width: 100%;
-  height: auto;
+  min-height: calc(100vh + 96px);
   object-fit: cover;
 }
 .hero-buttons {
@@ -396,8 +396,8 @@ a.navbar-item-link {
 }
 .cronograma-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 7rem;
 }
 .cronograma-title {
   padding: 1rem 0;
@@ -407,7 +407,7 @@ a.navbar-item-link {
   border-bottom: 1px solid rgba(23, 15, 52, 0.5254901961);
 }
 .cronograma-img {
-  max-height: 500px;
+  max-height: 1000px;
 }
 
 @media screen and (max-width: 992px) {
@@ -653,6 +653,15 @@ a.navbar-item-link {
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #E3B332;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */

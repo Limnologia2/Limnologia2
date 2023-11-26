@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Payments } from "../helpers/pagos";
-import pdfCircular from "../assets/Circulares/actualCircular.pdf";
-import pdfComoPagar from "../assets/Circulares/comoPagar.pdf";
+import { Documents } from "../helpers/documents";
 import { RxHamburgerMenu } from "react-icons/rx";
+import pdfComoPagar from "../assets/Circulares/comoPagar.pdf";
 export const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownPaymentsOpen, setIsDropdownPaymentsOpen] = useState(false);
+  const [isDropdownDocumentsOpen, setIsDropdownDocumentsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const scrollToElement = (id) => {
     const destino = document.querySelector(`#${id}`);
@@ -13,11 +14,16 @@ export const Navbar = () => {
   };
 
   window.addEventListener("scroll", () => {
-    setIsDropdownOpen(false);
+    setIsDropdownPaymentsOpen(false);
     setIsMenuOpen(false)
   });
-  const toggleDropdown = () => {
-    setIsDropdownOpen((prevState) => !prevState);
+  const toggleDropdownPayments = () => {
+    setIsDropdownPaymentsOpen((prevState) => !prevState);
+    if(isDropdownDocumentsOpen) setIsDropdownDocumentsOpen(false)
+  };
+  const toggleDropdownDocuments = () => {
+    setIsDropdownDocumentsOpen((prevState) => !prevState);
+    if(isDropdownPaymentsOpen) setIsDropdownPaymentsOpen(false)
   };
   const toggleMenu = () => {
     setIsMenuOpen(prevState => !prevState)
@@ -66,17 +72,6 @@ export const Navbar = () => {
             </button>
           </li>
           <li className="navbar-item">
-            <a
-              href={pdfCircular}
-              target="_blank"
-              rel="noreferrer"
-              className="navbar-item-link"
-              id="link-contacto"
-            >
-              Circular
-            </a>
-          </li>
-          <li className="navbar-item">
             <button
               className="navbar-item-link"
               id="link-patrocinadores"
@@ -86,9 +81,9 @@ export const Navbar = () => {
             </button>
           </li>
 
-          <div className="navbar-item" onClick={toggleDropdown}>
+          <div className="navbar-item" onClick={toggleDropdownPayments}>
             <button className="navbar-item-link">Pagos</button>
-            {isDropdownOpen && (
+            {isDropdownPaymentsOpen && (
               <ul className="navbar-dropdown">
                 {Payments &&
                   Payments.map((item, index) => {
@@ -120,6 +115,28 @@ export const Navbar = () => {
               </ul>
             )}
           </div>
+          <div className="navbar-item" onClick={toggleDropdownDocuments}>
+            <button className="navbar-item-link">Documentos</button>
+            {isDropdownDocumentsOpen && (
+              <ul className="navbar-dropdown">
+                {Documents &&
+                  Documents.map((item, index) => {
+                      return (
+                        <li className="navbar-dropdown-item" key={index}>
+                          <a
+                            href={item.pdf}
+                            target="_blank"
+                            className="navbar-dropdown-item-link"
+                            rel="noreferrer"
+                          >
+                            {item.name}
+                          </a>
+                        </li>
+                      )
+                  })}
+              </ul>
+            )}
+          </div>
           <li className="navbar-item">
             <button
               className="navbar-item-link"
@@ -129,17 +146,7 @@ export const Navbar = () => {
               Contactanos
             </button>
           </li>
-          <li className="navbar-item">
-            <a
-              href='https://docs.google.com/presentation/d/1ytuqMtbqtyxKiw_L7_CJTqQ7Avgdi5CP/edit?usp=drive_link&ouid=104229673733624171940&rtpof=true&sd=true'
-              target="_blank"
-              rel="noreferrer"
-              className="navbar-item-link"
-              id="link-contacto"
-            >
-              Plantilla del evento
-            </a>
-          </li>
+          
         </ul>
       </div>
     </nav>

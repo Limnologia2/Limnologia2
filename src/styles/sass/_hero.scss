@@ -18,7 +18,7 @@
             position: relative;
             top: -6rem;
             width: 100%;
-            height: auto;
+            min-height: calc(100vh + 96px);
             object-fit: cover;
         }
     }
