@@ -12,3 +12,12 @@
 @import 'hotelestable.scss';
 @import 'pagos.scss';
 @import 'onconstruction.scss';
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+    &-thumb{
+        background-color: $amarillo;
+        border-radius: 4px;
+    }
+    
+}
